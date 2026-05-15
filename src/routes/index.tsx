@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import {
   Trophy, Percent, CreditCard, Wrench, CheckCircle2, MapPin,
-  Truck, Cog, Quote, Phone, Calendar, ArrowRight, Package, Droplet, CalendarRange, Zap, Users, HeadphonesIcon,
+  Truck, Cog, Quote, Phone, Calendar, ArrowRight, Package, Droplet, CalendarRange, Zap, Users, Headphones,
 } from "lucide-react";
 import logoCampanha from "@/assets/logo-gol-de-placa.png";
 import logoMasseyBranco from "@/assets/massey-a9-branco.png";
@@ -353,7 +353,7 @@ function Testimonials() {
       <div className="relative max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center">
           <div className="inline-flex items-center gap-2 text-campaign-gold font-bold uppercase tracking-[0.3em] text-xs">
-            <HeadphonesIcon className="w-4 h-4" /> Depoimentos Reais
+            <Headphones className="w-4 h-4" /> Depoimentos Reais
           </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             Quem compra com a A9, <span className="text-campaign-gold">não para</span>
