@@ -87,7 +87,7 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="relative min-h-[90vh] md:min-h-[760px] flex items-center overflow-hidden">
-      <img src={heroStadium} alt="Estádio iluminado A9 Massey Ferguson" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={heroPartsStadium} alt="Peças originais Massey Ferguson com estádio iluminado e bandeira do Brasil ao fundo" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/65 to-black/95" />
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 0%, oklch(0 0 0 / 0.55) 100%)" }} />
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] rounded-full blur-3xl opacity-25" style={{ background: "radial-gradient(circle, oklch(0.82 0.17 88 / 0.5), transparent 60%)" }} />
