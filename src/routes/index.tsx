@@ -101,8 +101,9 @@ function Hero() {
 
         <motion.img {...fadeUp} transition={{ duration: 0.7, delay: 0.1 }} src={logoCampanha} alt="Gol de Placa" className="mt-5 w-[180px] md:w-[280px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)]" />
 
-        <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.3 }} className="mt-6 font-display font-bold uppercase text-4xl md:text-6xl lg:text-7xl leading-[1.05] max-w-5xl drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-          A peça certa. Na hora certa. <span className="text-campaign-gold">Com quem resolve de verdade.</span>
+        <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.3 }} className="mt-6 font-display font-bold uppercase text-4xl md:text-6xl lg:text-7xl leading-[1.05] max-w-5xl drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] whitespace-pre-line">
+          A PEÇA CERTA. NA HORA CERTA{"\n"}
+          <span className="text-campaign-gold">COM QUEM RESOLVE DE VERDADE</span>
         </motion.h1>
 
         <motion.p {...fadeUp} transition={{ duration: 0.7, delay: 0.4 }} className="mt-6 max-w-3xl text-base md:text-lg text-white/90 leading-relaxed">
