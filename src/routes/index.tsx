@@ -96,14 +96,14 @@ function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20 flex flex-col items-center text-center text-white">
         <motion.div {...fadeUp} className="inline-flex items-center gap-2 bg-mf-red/90 backdrop-blur border border-white/20 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] shadow-red">
-          <span className="w-2 h-2 rounded-full bg-white animate-pulse" /> Saldão Agrishow • Funil de Peças
+          <span className="w-2 h-2 rounded-full bg-white animate-pulse" /> Gol de Placa • Funil de Peças
         </motion.div>
 
         <motion.img {...fadeUp} transition={{ duration: 0.7, delay: 0.1 }} src={logoCampanha} alt="Gol de Placa" className="mt-5 w-[180px] md:w-[280px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)]" />
 
         <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.3 }} className="mt-6 font-display font-bold uppercase text-4xl md:text-6xl lg:text-7xl leading-[1.05] max-w-5xl drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] whitespace-pre-line">
-          A PEÇA CERTA. NA HORA CERTA{"\n"}
-          <span className="text-campaign-gold">COM QUEM RESOLVE DE VERDADE</span>
+          A peça certa. Na hora certa.{"\n"}
+          <span className="text-campaign-gold">Com quem resolve de verdade</span>
         </motion.h1>
 
         <motion.p {...fadeUp} transition={{ duration: 0.7, delay: 0.4 }} className="mt-6 max-w-3xl text-base md:text-lg text-white/90 leading-relaxed">
@@ -145,7 +145,7 @@ function OfferBlock() {
           <Trophy className="w-4 h-4 text-campaign-gold" /> Gol de Placa
         </motion.div>
         <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl max-w-3xl mx-auto">
-          Saldão Agrishow — <span className="text-campaign-gold">condições imbatíveis em peças</span>
+          <span className="text-campaign-gold">Gol de Placa</span> — condições imbatíveis em peças
         </motion.h2>
         <p className="mt-5 max-w-2xl mx-auto text-white/80 text-base md:text-lg">Aproveite condições imbatíveis para renovar seu estoque de peças.</p>
         <div className="mt-14 grid md:grid-cols-3 gap-6 md:gap-8">
