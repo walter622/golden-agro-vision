@@ -7,6 +7,7 @@ import {
 import logoCampanha from "@/assets/logo-gol-de-placa.png";
 import logoMasseyBranco from "@/assets/massey-a9-branco.png";
 import heroStadium from "@/assets/hero-stadium.jpg";
+import heroPartsStadium from "@/assets/hero-parts-stadium.jpg";
 import aboutImg from "@/assets/about-a9.jpg";
 import partsBanner from "@/assets/parts-banner.jpg";
 
