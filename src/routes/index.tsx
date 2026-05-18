@@ -10,6 +10,7 @@ import heroStadium from "@/assets/hero-stadium.jpg";
 import heroPartsStadium from "@/assets/hero-parts-stadium.jpg";
 import aboutImg from "@/assets/about-a9.jpg";
 import partsBanner from "@/assets/parts-banner.jpg";
+import partsTires from "@/assets/parts-tires.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -306,16 +307,30 @@ function PartsOffer() {
           </h2>
         </motion.div>
 
-        <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.15 }} className="mt-12 relative rounded-3xl overflow-hidden border border-campaign-gold/30 shadow-stadium">
-          <img src={partsBanner} alt="Peças e lubrificantes originais Massey Ferguson" className="w-full h-auto object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent" />
-          <div className="absolute inset-y-0 left-0 flex items-center p-8 md:p-12 max-w-xl">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-mf-red text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-red">
-                <Trophy className="w-3.5 h-3.5 text-campaign-gold" /> Linha completa
+        <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.15 }} className="mt-12 grid md:grid-cols-3 gap-6">
+          <div className="md:col-span-2 relative rounded-3xl overflow-hidden border border-campaign-gold/30 shadow-stadium">
+            <img src={partsBanner} alt="Peças e lubrificantes originais Massey Ferguson" className="w-full h-full object-cover min-h-[420px]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/20 to-transparent" />
+            <div className="absolute inset-y-0 left-0 flex items-center p-8 md:p-12 max-w-xl">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-mf-red text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-red">
+                  <Trophy className="w-3.5 h-3.5 text-campaign-gold" /> Linha completa
+                </div>
+                <h3 className="mt-4 font-display font-bold uppercase text-2xl md:text-4xl leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+                  Filtros, óleos, aditivos e <span className="text-campaign-gold">peças originais</span> AGCO Parts
+                </h3>
               </div>
-              <h3 className="mt-4 font-display font-bold uppercase text-2xl md:text-4xl leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                Filtros, óleos, aditivos e <span className="text-campaign-gold">peças originais</span> AGCO Parts
+            </div>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden border border-campaign-gold/30 shadow-stadium min-h-[420px]">
+            <img src={partsTires} alt="Pneus agrícolas Massey Ferguson em destaque" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+              <div className="inline-flex items-center gap-2 bg-mf-red text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] shadow-red">
+                <Zap className="w-3.5 h-3.5 text-campaign-gold" /> Pneus
+              </div>
+              <h3 className="mt-3 font-display font-bold uppercase text-xl md:text-2xl leading-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+                Pneus agrícolas com <span className="text-campaign-gold">pronta entrega</span>
               </h3>
             </div>
           </div>
