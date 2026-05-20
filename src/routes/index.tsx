@@ -386,9 +386,6 @@ function OfferRecap() {
       <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 15% 50%, oklch(0.42 0.13 145 / 0.4), transparent 45%), radial-gradient(circle at 85% 50%, oklch(0.42 0.13 145 / 0.4), transparent 45%)" }} />
       <div className="relative max-w-6xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-campaign-green-dark text-campaign-gold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.3em] shadow-lg">
-            <Trophy className="w-4 h-4" /> Promoções e Condições Especiais
-          </div>
           <h2 className="mt-5 font-display font-bold uppercase text-3xl md:text-5xl text-campaign-green-dark leading-tight">
             Saldão <span className="text-mf-red">Gol de Placa</span> em peças
           </h2>
