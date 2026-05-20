@@ -95,9 +95,6 @@ function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20 flex flex-col items-center text-center text-white">
-        <motion.div {...fadeUp} className="inline-flex items-center gap-2 bg-mf-red/90 backdrop-blur border border-white/20 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] shadow-red">
-          <span className="w-2 h-2 rounded-full bg-white animate-pulse" /> Gol de Placa • Funil de Peças
-        </motion.div>
 
         <motion.img {...fadeUp} transition={{ duration: 0.7, delay: 0.1 }} src={logoCampanha} alt="Gol de Placa" className="mt-5 w-[180px] md:w-[280px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)]" />
 
@@ -141,9 +138,6 @@ function OfferBlock() {
     <section id="oferta" className="relative bg-stadium text-white py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.82 0.17 88 / 0.4), transparent 40%), radial-gradient(circle at 80% 80%, oklch(0.42 0.13 145 / 0.6), transparent 50%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
-        <motion.div {...fadeUp} className="inline-flex items-center gap-2 bg-mf-red text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.3em] shadow-red">
-          <Trophy className="w-4 h-4 text-campaign-gold" /> Gol de Placa
-        </motion.div>
         <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl max-w-3xl mx-auto">
           <span className="text-campaign-gold">Gol de Placa</span> — condições imbatíveis em peças
         </motion.h2>
@@ -180,9 +174,6 @@ function About() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div {...fadeUp}>
-            <div className="inline-flex items-center gap-2 text-mf-red font-bold uppercase tracking-[0.3em] text-xs">
-              <Wrench className="w-4 h-4" /> Quem é a A9
-            </div>
             <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl text-foreground leading-tight">
               A9 Máquinas: <span className="text-mf-red">referência</span> em peças Massey Ferguson
             </h2>
@@ -218,9 +209,6 @@ function Differentials() {
       <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: "radial-gradient(ellipse at top, oklch(0.51 0.21 27 / 0.4), transparent 60%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-campaign-gold font-bold uppercase tracking-[0.3em] text-xs">
-            <Zap className="w-4 h-4" /> Diferenciais Competitivos
-          </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             Por que o agro paulista escolhe a <span className="text-mf-red">A9</span>
           </h2>
@@ -258,9 +246,6 @@ function Units() {
     <section id="unidades" className="bg-neutral-950 text-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-mf-red font-bold uppercase tracking-[0.3em] text-xs">
-            <MapPin className="w-4 h-4" /> Nossas Unidades
-          </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             A peça certa chega <span className="text-mf-red">na hora certa</span>
           </h2>
@@ -300,9 +285,6 @@ function PartsOffer() {
     <section id="pecas" className="relative py-20 md:py-28 bg-neutral-950 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 text-campaign-gold font-bold uppercase tracking-[0.3em] text-xs">
-            <Wrench className="w-4 h-4" /> O Que Oferecemos
-          </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             Peças, manutenção e <span className="text-campaign-gold">emergências</span> resolvidas
           </h2>
@@ -369,9 +351,6 @@ function Testimonials() {
       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 70% 30%, oklch(0.82 0.17 88 / 0.5), transparent 50%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center">
-          <div className="inline-flex items-center gap-2 text-campaign-gold font-bold uppercase tracking-[0.3em] text-xs">
-            <Headphones className="w-4 h-4" /> Depoimentos Reais
-          </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             Quem compra com a A9, <span className="text-campaign-gold">não para</span>
           </h2>
@@ -407,9 +386,6 @@ function OfferRecap() {
       <div className="absolute inset-0 opacity-30 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 15% 50%, oklch(0.42 0.13 145 / 0.4), transparent 45%), radial-gradient(circle at 85% 50%, oklch(0.42 0.13 145 / 0.4), transparent 45%)" }} />
       <div className="relative max-w-6xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-campaign-green-dark text-campaign-gold px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.3em] shadow-lg">
-            <Trophy className="w-4 h-4" /> Promoções e Condições Especiais
-          </div>
           <h2 className="mt-5 font-display font-bold uppercase text-3xl md:text-5xl text-campaign-green-dark leading-tight">
             Saldão <span className="text-mf-red">Gol de Placa</span> em peças
           </h2>
