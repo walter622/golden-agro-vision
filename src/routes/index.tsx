@@ -239,8 +239,14 @@ function Differentials() {
 
 function Units() {
   const stores = [
-    "Avaré", "Piedade", "Bragança Paulista", "Itapeva",
-    "Piracicaba", "Itapetininga", "Jaú", "Campos de Holambra",
+    { city: "Avaré", addr1: "Praça Cadiz, 01 — Jardim Europa II", addr2: "Avaré / SP" },
+    { city: "Piedade", addr1: "Rod. Bunjiro Nakao SP 250, 15 — Centro", addr2: "Piedade / SP" },
+    { city: "Itapeva", addr1: "Arthur Oswaldo Franson, 350", addr2: "Recanto Pilão D'Agua, Itapeva / SP" },
+    { city: "Piracicaba", addr1: "R. Antonio Morato do Amaral, 99", addr2: "Agua Branca, Piracicaba / SP" },
+    { city: "Jaú", addr1: "Av Deputado Zien Nassif, 1134", addr2: "Zona Industrial, Jaú / SP" },
+    { city: "Bragança Paulista", addr1: "Eduardo Rizk, n 1, Cidade Planejada I", addr2: "Bragança Paulista / SP" },
+    { city: "Itapetininga", addr1: "Rua Maria Plens, 600", addr2: "Jardim Bela Vista, Itapetininga / SP" },
+    { city: "Campos de Holambra", addr1: "Avenida das Posses, nº 330", addr2: "Campos de Holambra, Paranapanema / SP" },
   ];
   return (
     <section id="unidades" className="bg-neutral-950 text-white py-20 md:py-28">
@@ -251,20 +257,19 @@ function Units() {
           </h2>
           <p className="mt-5 text-white/70 text-lg">Com unidades em cidades-chave do agronegócio paulista, garantimos atendimento de gente que resolve.</p>
         </motion.div>
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {stores.map((city, i) => (
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+          {stores.map((s, i) => (
             <motion.div
-              key={city}
+              key={s.city}
               {...fadeUp}
               transition={{ duration: 0.5, delay: 0.04 * i }}
-              className="group flex items-center gap-4 p-5 rounded-xl border border-white/10 hover:border-mf-red bg-gradient-to-br from-neutral-900 to-black hover:-translate-y-1 transition-all"
             >
-              <div className="w-12 h-12 rounded-lg bg-mf-red/15 group-hover:bg-mf-red flex items-center justify-center transition-colors shrink-0">
-                <MapPin className="w-6 h-6 text-mf-red group-hover:text-white transition-colors" />
+              <div className="font-display font-bold uppercase text-mf-red text-lg leading-tight">
+                A9 — {s.city}
               </div>
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-campaign-gold">A9</div>
-                <div className="font-display font-bold text-lg uppercase leading-tight">{city}</div>
+              <div className="mt-3 text-white/80 text-sm leading-relaxed">
+                <div>{s.addr1}</div>
+                <div>{s.addr2}</div>
               </div>
             </motion.div>
           ))}
@@ -273,6 +278,7 @@ function Units() {
     </section>
   );
 }
+
 
 function PartsOffer() {
   const list = [
