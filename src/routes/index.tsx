@@ -351,9 +351,6 @@ function Testimonials() {
       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 70% 30%, oklch(0.82 0.17 88 / 0.5), transparent 50%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 md:px-8">
         <motion.div {...fadeUp} className="text-center">
-          <div className="inline-flex items-center gap-2 text-campaign-gold font-bold uppercase tracking-[0.3em] text-xs">
-            <Headphones className="w-4 h-4" /> Depoimentos Reais
-          </div>
           <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
             Quem compra com a A9, <span className="text-campaign-gold">não para</span>
           </h2>
