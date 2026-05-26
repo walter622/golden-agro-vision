@@ -99,9 +99,14 @@ function Hero() {
       <motion.div
         {...fadeUp}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 pt-6 pb-14 md:pt-8 md:pb-20 flex justify-center"
+        className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 pt-6 pb-14 md:pt-10 md:pb-20 flex flex-col items-center text-center"
       >
-        <CTAButton>Fale com um Especialista A9 Agora</CTAButton>
+        <p className="text-base md:text-lg text-white/85 leading-relaxed max-w-3xl">
+          Na A9, você encontra peças originais Massey Ferguson com suporte técnico especializado, entrega rápida e atendimento exclusivo para manter sua operação sempre à frente.
+        </p>
+        <div className="mt-8">
+          <CTAButton>Fale com um Especialista A9 Agora</CTAButton>
+        </div>
       </motion.div>
     </section>
   );
@@ -269,9 +274,9 @@ function PartsOffer() {
   return (
     <section id="pecas" className="relative py-20 md:py-28 bg-neutral-950 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto flex flex-col items-center">
-          <img src={logoAgcoParts} alt="AGCO Parts — Peças Genuínas, Qualidade Garantida" className="w-24 md:w-32 mb-6 drop-shadow-[0_10px_30px_rgba(199,17,33,0.4)]" />
-          <h2 className="mt-2 font-display font-bold uppercase text-3xl md:text-5xl">
+        <motion.div {...fadeUp} className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 text-center md:text-left">
+          <img src={logoAgcoParts} alt="AGCO Parts — Peças Genuínas, Qualidade Garantida" className="w-20 md:w-28 shrink-0 drop-shadow-[0_10px_30px_rgba(199,17,33,0.4)]" />
+          <h2 className="font-display font-bold uppercase text-3xl md:text-5xl">
             Peças, manutenção e <span className="text-campaign-gold">emergências</span> resolvidas
           </h2>
         </motion.div>
