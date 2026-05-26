@@ -4,13 +4,13 @@ import {
   Trophy, Percent, CreditCard, Wrench, CheckCircle2, MapPin,
   Truck, Cog, Quote, Phone, Calendar, ArrowRight, Package, Droplet, CalendarRange, Zap, Users, Headphones,
 } from "lucide-react";
-import logoCampanha from "@/assets/logo-gol-de-placa.png";
 import logoMasseyBranco from "@/assets/massey-a9-branco.png";
-import heroStadium from "@/assets/hero-stadium.jpg";
-import heroPartsStadium from "@/assets/hero-parts-stadium.jpg";
-import aboutImg from "@/assets/about-a9.jpg";
+import heroPecasDesktop from "@/assets/hero-pecas-desktop.jpg";
+import heroPecasMobile from "@/assets/hero-pecas-mobile.jpg";
+import aboutImg from "@/assets/aperto-de-mao.png";
 import partsBanner from "@/assets/parts-banner.jpg";
 import partsTires from "@/assets/parts-tires.jpg";
+import logoAgcoParts from "@/assets/logo-agco-parts.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
