@@ -87,43 +87,22 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[90vh] md:min-h-[760px] flex items-center overflow-hidden">
-      <img src={heroPartsStadium} alt="Peças originais Massey Ferguson com estádio iluminado e bandeira do Brasil ao fundo" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/65 to-black/95" />
-      <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, transparent 0%, oklch(0 0 0 / 0.55) 100%)" }} />
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] rounded-full blur-3xl opacity-25" style={{ background: "radial-gradient(circle, oklch(0.82 0.17 88 / 0.5), transparent 60%)" }} />
-      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent" />
-
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20 flex flex-col items-center text-center text-white">
-
-        <motion.img {...fadeUp} transition={{ duration: 0.7, delay: 0.1 }} src={logoCampanha} alt="Gol de Placa" className="mt-5 w-[180px] md:w-[280px] drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)]" />
-
-        <motion.h1 {...fadeUp} transition={{ duration: 0.8, delay: 0.3 }} className="mt-6 font-display font-bold uppercase text-4xl md:text-6xl lg:text-7xl leading-[1.05] max-w-5xl drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] whitespace-pre-line">
-          A peça certa. Na hora certa.{"\n"}
-          <span className="text-campaign-gold">Com quem resolve de verdade</span>
-        </motion.h1>
-
-        <motion.p {...fadeUp} transition={{ duration: 0.7, delay: 0.4 }} className="mt-6 max-w-3xl text-base md:text-lg text-white/90 leading-relaxed">
-          Na A9, você encontra peças originais Massey Ferguson com suporte técnico especializado, entrega rápida e atendimento exclusivo para manter sua operação sempre à frente.
-        </motion.p>
-
-        <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.5 }} className="mt-8">
-          <CTAButton large>Fale com um Especialista A9 Agora</CTAButton>
-        </motion.div>
-
-        <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.6 }} className="mt-10 flex flex-wrap items-center justify-center gap-3 md:gap-4">
-          {[
-            { label: "Até 15% OFF" },
-            { label: "10x sem juros" },
-            { label: "Entrega em todo SP" },
-          ].map((item) => (
-            <span key={item.label} className="flex items-center gap-2 rounded-full border border-campaign-gold/40 bg-black/55 backdrop-blur-md px-4 py-2 text-xs md:text-sm font-semibold tracking-wide text-white shadow-[0_4px_20px_-6px_rgba(0,0,0,0.6)]">
-              <CheckCircle2 className="w-4 h-4 text-campaign-gold" strokeWidth={2.5} />
-              {item.label}
-            </span>
-          ))}
-        </motion.div>
-      </div>
+    <section id="top" className="relative bg-black overflow-hidden">
+      <picture>
+        <source media="(min-width: 768px)" srcSet={heroPecasDesktop} />
+        <img
+          src={heroPecasMobile}
+          alt="A9 Massey Ferguson — Gol de Placa: A peça certa. Na hora certa. Com quem resolve de verdade."
+          className="block w-full h-auto"
+        />
+      </picture>
+      <motion.div
+        {...fadeUp}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 pt-6 pb-14 md:pt-8 md:pb-20 flex justify-center"
+      >
+        <CTAButton>Fale com um Especialista A9 Agora</CTAButton>
+      </motion.div>
     </section>
   );
 }
@@ -434,13 +413,10 @@ function FinalCTA() {
   ];
   return (
     <section className="relative py-20 md:py-28 bg-neutral-950 text-white overflow-hidden">
-      <img src={heroStadium} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover opacity-25" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-neutral-950 to-black" />
+      <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, oklch(0.42 0.13 145 / 0.6), transparent 60%)" }} />
       <div className="relative max-w-5xl mx-auto px-4 md:px-8 text-center">
-        <motion.img {...fadeUp} src={logoCampanha} alt="Gol de Placa" className="mx-auto w-[200px] md:w-[300px] mb-8" />
         <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="font-display font-bold uppercase text-3xl md:text-5xl lg:text-6xl leading-tight">
-          A9 Máquinas: agilidade, estoque e <span className="text-campaign-gold">gente que entende do agro</span>
-        </motion.h2>
         <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10 flex flex-col items-center gap-3">
           {bullets.map((b) => (
             <div key={b} className="flex items-center gap-3 text-base md:text-lg">
