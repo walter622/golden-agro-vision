@@ -123,7 +123,7 @@ function OfferBlock() {
       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, oklch(0.82 0.17 88 / 0.4), transparent 40%), radial-gradient(circle at 80% 80%, oklch(0.42 0.13 145 / 0.6), transparent 50%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
         <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl max-w-3xl mx-auto">
-          <span className="text-campaign-gold">Gol de Placa</span> — condições imbatíveis em peças
+          GOL DE PLACA&nbsp;CONDIÇÕES IMBATÍVEIS EM PEÇAS
         </motion.h2>
         <p className="mt-5 max-w-2xl mx-auto text-white/80 text-base md:text-lg">Aproveite condições imbatíveis para renovar seu estoque de peças.</p>
         <div className="mt-14 grid md:grid-cols-3 gap-6 md:gap-8">
