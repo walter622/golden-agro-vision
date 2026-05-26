@@ -417,6 +417,8 @@ function FinalCTA() {
       <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at center, oklch(0.42 0.13 145 / 0.6), transparent 60%)" }} />
       <div className="relative max-w-5xl mx-auto px-4 md:px-8 text-center">
         <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="font-display font-bold uppercase text-3xl md:text-5xl lg:text-6xl leading-tight">
+          A9 Máquinas: agilidade, estoque e <span className="text-campaign-gold">gente que entende do agro</span>
+        </motion.h2>
         <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10 flex flex-col items-center gap-3">
           {bullets.map((b) => (
             <div key={b} className="flex items-center gap-3 text-base md:text-lg">
