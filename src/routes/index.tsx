@@ -47,7 +47,7 @@ function CTAButton({ children, large = false, variant = "red" }: { children: Rea
       target="_blank"
       rel="noopener noreferrer"
       className={`group relative inline-flex items-center justify-center gap-3 font-display font-bold uppercase tracking-wider rounded-md hover:scale-[1.04] active:scale-[0.99] transition-all overflow-hidden ${base} ${
-        large ? "px-10 py-6 text-lg md:text-2xl" : "px-7 py-4 text-base"
+        large ? "px-7 py-4 text-sm md:px-10 md:py-6 md:text-2xl" : "px-6 py-3.5 text-sm md:px-7 md:py-4 md:text-base"
       }`}
     >
       <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/25 to-transparent" />
@@ -76,7 +76,7 @@ function Header() {
           href={WA_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden sm:inline-flex items-center gap-2 bg-mf-red hover:bg-mf-red-dark text-white px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide transition shadow-red"
+          className="inline-flex items-center gap-2 bg-mf-red hover:bg-mf-red-dark text-white px-3 py-2 md:px-4 md:py-2 rounded-md text-xs md:text-sm font-bold uppercase tracking-wide transition shadow-red"
         >
           <Phone className="w-4 h-4" /> Falar agora
         </a>
