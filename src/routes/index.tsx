@@ -99,7 +99,7 @@ function Hero() {
       <motion.div
         {...fadeUp}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 pt-2 pb-12 md:pt-3 md:pb-20 flex flex-col items-center text-center"
+        className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 pt-0 pb-12 md:pt-3 md:pb-20 flex flex-col items-center text-center -mt-2 md:mt-0"
       >
         <p className="text-[11px] leading-snug md:text-xl md:leading-relaxed text-white/85 max-w-3xl px-2">
           Na A9, você encontra peças originais Massey Ferguson com suporte técnico especializado, entrega rápida e atendimento exclusivo para manter sua operação sempre à frente.
