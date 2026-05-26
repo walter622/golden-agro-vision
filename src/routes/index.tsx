@@ -165,7 +165,7 @@ function About() {
           </motion.div>
           <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.15 }} className="relative">
             <div className="absolute -inset-4 bg-mf-red/10 rounded-2xl -rotate-2" />
-            <img src={aboutImg} alt="Equipe A9 Massey Ferguson no campo" loading="lazy" className="relative rounded-2xl shadow-stadium w-full aspect-[4/3] object-cover" />
+            <img src={aboutImg} alt="Consultor A9 cumprimentando produtor no campo com trator Massey Ferguson ao fundo" loading="lazy" className="relative rounded-2xl shadow-stadium w-full aspect-[4/5] object-cover object-top" />
             <div className="absolute -bottom-6 -left-6 bg-mf-red text-white p-5 rounded-xl shadow-red max-w-[200px]">
               <div className="font-display text-3xl font-bold">8 unidades</div>
               <div className="text-xs uppercase tracking-wider mt-1 opacity-90">no interior de SP</div>
@@ -269,8 +269,9 @@ function PartsOffer() {
   return (
     <section id="pecas" className="relative py-20 md:py-28 bg-neutral-950 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto">
-          <h2 className="mt-4 font-display font-bold uppercase text-3xl md:text-5xl">
+        <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto flex flex-col items-center">
+          <img src={logoAgcoParts} alt="AGCO Parts — Peças Genuínas, Qualidade Garantida" className="w-24 md:w-32 mb-6 drop-shadow-[0_10px_30px_rgba(199,17,33,0.4)]" />
+          <h2 className="mt-2 font-display font-bold uppercase text-3xl md:text-5xl">
             Peças, manutenção e <span className="text-campaign-gold">emergências</span> resolvidas
           </h2>
         </motion.div>
